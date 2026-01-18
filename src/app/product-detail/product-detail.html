@@ -1,0 +1,14 @@
+<div class="container mt-4" *ngIf="product">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="product.image" class="img-fluid" [alt]="product.title">
+    </div>
+    <div class="col-md-6">
+      <h2>{{product.title}}</h2>
+      <p class="lead">{{product.description}}</p>
+      <h3 class="text-primary">${{product.price}}</h3>
+      <button class="btn btn-primary btn-lg">Add to Cart</button>
+      <a routerLink="/cosmetic" class="btn btn-secondary btn-lg ms-2">Back to Products</a>
+    </div>
+  </div>
+</div>
